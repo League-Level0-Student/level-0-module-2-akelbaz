@@ -1,9 +1,9 @@
 // create three integer variables to  
     //    represent the x, y, and the size of the ellipse
     
-    float x = 20;
-    float y = 30;
-    int size = 40; 
+    int x = 2;
+    int y = 30;
+    int size = 60; 
     void setup() {
       //set the size of your sketch
  size(500,500);   
@@ -29,11 +29,12 @@
       //8a. make an if statement to check if the distance variable
       //   is within the size of the ellipse
       if(distance <= size){
-      x = random(101);
+      x = (int)random(101);
       }
       
         //8b.  set the x and y of the ellipse to a random location on the window
-       
+     x = (int)random(width);
+     y = (int)random(height);
       
     }
     
